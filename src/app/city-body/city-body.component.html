@@ -1,0 +1,56 @@
+<div class="container">
+    
+   <div class="row">
+       <div class="col-lg-6">
+            <h2>{{name[id]}}</h2>
+            <div class="row jumbotron">
+            <p>{{descrip[id]}}</p>
+            </div>
+       </div>
+       <div class="col-lg-6">
+            <img [src] = "imgSources[id]"
+            alt=""
+            class="image-1">
+        
+         <div class="col-lg-4">
+            <img [src] = "imgSources[id]"
+            alt=""
+            class="image-1">
+          </div>
+          <div class="col-lg-4">
+            <img [src] = "imgSources[id]"
+            alt=""
+            class="image-1">
+          </div>
+          <div class="col-lg-4">
+            <img [src] = "imgSources[id]"
+            alt=""
+            class="image-1">
+          </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="row  card1">
+        <div class="col-lg-4 cards"
+        *ngFor = "let place of places[id];let i=index">
+        <a 
+            style="cursor:pointer;"
+            [routerLink] = "i"
+            class="list-group-item clearfix"
+            >
+            <img [src]="place.imgS" 
+             class="card-image-top img-thumbnail">
+            
+            <h3>{{place.name}}</h3>
+            <p>{{place.about}}</p>
+            <hr>
+            <h5>{{place.time}}</h5>
+            <h5>{{place.charges}}</h5>
+            <hr>
+
+            </a>
+        </div>
+     </div>
+</div>

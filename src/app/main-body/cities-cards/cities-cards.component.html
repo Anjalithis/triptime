@@ -1,0 +1,28 @@
+  <div class="container">
+    <div class="row">
+      <h1>Travel Across Top Places in India with us</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-4 card"
+        *ngFor = "let city of cities;let i=index">
+
+        <img [src]="city.imagePath" 
+        alt="image"
+        class="card-image-top img-thumbnail img-rounded">
+          <!-- <a [routerLink] ="[city.name]"
+          routerLinkActive = "active" > -->
+        <h5 class="card-title">{{city.name}}</h5>
+
+        <div class="card-footer">
+          <a 
+          [routerLink]= "i">
+         <button 
+         (click) = "onExplore()" class="btn btn-primary">EXPLORE</button>
+        
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  
