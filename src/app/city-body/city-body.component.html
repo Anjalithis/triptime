@@ -37,8 +37,10 @@
         *ngFor = "let place of places[id];let i=index">
         <a 
             style="cursor:pointer;"
-            [routerLink] = "i"
+           (click) = "onNavi(name[id] , i)"
+
             class="list-group-item clearfix"
+            
             >
             <img [src]="place.imgS" 
              class="card-image-top img-thumbnail">

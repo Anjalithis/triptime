@@ -22,11 +22,15 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                   <a style = "cursor : pointer;">sign up</a>
+                   <a routerLink="auth" style = "cursor : pointer;" *ngIf="!isAuthenticated">Authentication</a>
                 </li>
                 <li>
-                    <a style = "cursor : pointer;">log in</a>
+                    <a  style = "cursor : pointer;" *ngIf="isAuthenticated" (click)="onlogout()">logout</a>
                  </li>
+                 <li>
+                    <a  style = "cursor : pointer;" *ngIf="isAuthenticated" routerLink="home/cart">cart</a>
+                 </li>
+                
             </ul>
         </div>
     </div>

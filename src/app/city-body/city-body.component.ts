@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
@@ -43,18 +43,37 @@ export class CityBodyComponent implements OnInit {
     { name :"Nahargarh Fort", about : "epitome of great architecture", time : "3 hrs", charges : "50inr" ,imgS : "https://www.holidify.com/images/cmsuploads/compressed/3308512331_ef4ff4cd95_b_20190904120123.jpg"},
     { name :"Hawa Mahal", about : "signature building of jaipur", time : "1hr", charges : "70inr" ,imgS : "https://www.holidify.com/images/cmsuploads/compressed/h4_20170822181427.PNG"},
     {name : "City Palace" , about : "famous tourist attraction" , time : "2-3 hrs" , charges : "100" , imgS : "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1081660136(1)_20190904115748.jpg"},
-    { name:"Jantar Mantar" , about : "stone astronomical observatory" , time :"1-2 hrs" , charges : "40inr" , imgS : "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_579266854_20190904113343.jpg" }
+    { name:"Jantar Mantar" , about : "stone astronomical observatory" , time :"1-2 hrs" , charges : "40inr" , imgS : "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_579266854_20190904113343.jpg" },
+    {name : "Lacchiwalla" , about : "popular picnic destination",  time:"" , charges:"INR 20 " , 
+      imgS:"https://images.app.goo.gl/ognPq9NTkxTakRsM6"  }
  ] , 
  [
    {name : "Lake Pichola" , about : "artificial lake", time : "1-2 hrs" , charges : "free", imgS:"https://www.holidify.com/images/cmsuploads/compressed/shutterstock_536597029_20190606160921_20190606161228.jpg"},
    {name : "Eklingji Temple" , about : "most popular temple of Rajasthan", time : "2 hrs" , charges : "free", imgS:"https://www.holidify.com/images/cmsuploads/compressed/30883407598_f5348a51cb_b_20190514183627.jpg"},
    {name : "City Palace" , about : "magnificent royal complex", time : "3 hrs" , charges : "300inr", imgS:"https://www.holidify.com/images/cmsuploads/compressed/3137_20190428132918.jpg"}
  ],
-
+ [
+  { name: "The Ridge" , about : "most popular point" , time : "2-3 hours" , charges :"Free" , imgS:"" },
+  { name: "Shimla Christ Church" , about : "beautiful church" , time : "1-2 hours" , charges :"Free" , imgS:"" },
+  { name: "Green valley" , about : "mesmerising place" , time : "1day" , charges :"Free" , imgS:"" },
+  { name: "Jakhu Temple" , about : "world's largest Hanuman statue" , time : "1-2 hours" , charges :"Free" , imgS:"" },
+  { name: "Himachal State Museum" , about : "unique collectable items" , time : "Less than 1 hour" , charges :"INR 20 " , imgS:"" },
+  { name: "Shimla Reserve Forest Sanctuary" , about : "popular flora fauna" , time : "4 to 5 hours " , charges :"INR 25" , imgS:"" }
+ ],
+ [
+   { name: "Tapkeshwar Temple" , about : "" , time : "1-2 hrs" , charges :"Free" , imgS:"" },
+   { name: "forest Research Institute" , about : "" , time : "1-2 hrs" , charges :"INR 15" , imgS:"" },
+   { name: "Kedarnath Trek" , about : "" , time : "5 days" , charges :"INR 7000-9000" , imgS:"" },
+   { name: "Tiger View Jungle" , about : "" , time : "1-2 hrs" , charges :"varying" , imgS:"" },
+   { name: "Robber's Cave" , about : "" , time : "2-3 hrs" , charges :"INR 25" , imgS:"" }
+   
+ ]
+ 
 
   ];
-  public id : number;
-
+  
+  
+  public id : number ;
   constructor(private router :Router,
               private route : ActivatedRoute) { }
 
@@ -64,6 +83,11 @@ export class CityBodyComponent implements OnInit {
           this.id = +params['id'];
         }
       );
+         
   }
+ onNavi(name:string , i:number){
+   this.router.navigate([name,i] , 
+   {relativeTo:this.route})
+ }
 
 }
