@@ -1,1 +1,69 @@
-<p>mumbai works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-lg-6 content">
+            <h2>{{places[index].name}}</h2>
+            
+            
+            
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <img [src]="places[index].imgS" 
+            alt="image" class="img-rounded">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-2 card card1">
+            
+            <p class="title">temperature:{{places[index].weather}}</p>
+           
+        </div>
+        <div class="col-md-2 card card2">
+            <p class="title">timimgs:{{places[index].timings}}</p>
+        </div>
+        <div class="col-md-2 card card3">
+            <p class="title">time required:{{places[index].timer}}</p>
+        </div>
+        <div class="col-md-2 card card4" >
+            <p class="title">ideal time : summers</p>
+        </div>
+        <div class="col-md-2 card card5">
+            <p class="title">entry fee:{{places[index].fee}}</p>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row c2">
+        <h3>Tour Description</h3>
+        <p class="tourDesc">{{places[index].desc}}</p>
+    </div>
+    </div>
+    <hr>
+    <div class="container row c2">
+        <h3>Photos and highlights</h3>
+        <div class="col-md-3">
+            <a href="" class="list-group-item clearfix">
+            <img class="images" src="https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img1">
+            </a> 
+        </div>
+        <div class="col-md-3">
+            <a href="" class="list-group-item clearfix">
+            <img  class="images" src="https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img2">
+        </a>
+        </div>
+        <div class="col-md-3">
+            <a href="" class="list-group-item clearfix">
+            <img  class="images" src="https://images.pexels.com/photos/3769120/pexels-photo-3769120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img3">
+        </a>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <p class="guide"> Get a private guide for the trip.</p>
+                <button class="btn btn-primary" 
+                
+                (click)="onBook()">Book a Tour</button>
+                <p class="guide">at xyz INR per head</p>
+            </div>
+            
+        </div>
+    </div>
+</div>

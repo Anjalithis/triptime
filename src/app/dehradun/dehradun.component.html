@@ -1,9 +1,9 @@
-<p>dehradun works!</p>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-lg-6 content">
             <h2>{{places[index].name}}</h2>
-            
+            <h3>{{places[index].sf}}</h3>
             
             
         </div>
@@ -15,20 +15,20 @@
     <hr>
     <div class="row">
         <div class="col-md-2 card card1">
-            <p class="title">{{places[index].weather}}</p>
+            <p class="title">temperature:{{places[index].weather}}</p>
            
         </div>
         <div class="col-md-2 card card2">
-            <p class="title">{{places[index].timings}}</p>
+            <p class="title">timings:{{places[index].timings}}</p>
         </div>
         <div class="col-md-2 card card3">
-            <p class="title">{{places[index].timer}}</p>
+            <p class="title">time required:{{places[index].timer}}</p>
         </div>
         <div class="col-md-2 card card4" >
-            <p class="title">ideal time</p>
+            <p class="title">ideal time : anytime</p>
         </div>
         <div class="col-md-2 card card5">
-            <p class="title">{{places[index].fee}}</p>
+            <p class="title">entry fee:{{places[index].fee}}</p>
         </div>
     </div>
     <div class="container">

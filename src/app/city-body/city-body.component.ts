@@ -12,8 +12,8 @@ export class CityBodyComponent implements OnInit {
     "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "https://images.pexels.com/photos/925069/pexels-photo-925069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "https://images.pexels.com/photos/574324/pexels-photo-574324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/5238339/pexels-photo-5238339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/2961109/pexels-photo-2961109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "https://www.holidify.com/images/bgImages/SHIMLA.jpg",
+    "https://www.holidify.com/images/bgImages/DEHRADUN.jpg"
 
   ];
    public name = [
@@ -44,29 +44,40 @@ export class CityBodyComponent implements OnInit {
     { name :"Hawa Mahal", about : "signature building of jaipur", time : "1hr", charges : "70inr" ,imgS : "https://www.holidify.com/images/cmsuploads/compressed/h4_20170822181427.PNG"},
     {name : "City Palace" , about : "famous tourist attraction" , time : "2-3 hrs" , charges : "100" , imgS : "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1081660136(1)_20190904115748.jpg"},
     { name:"Jantar Mantar" , about : "stone astronomical observatory" , time :"1-2 hrs" , charges : "40inr" , imgS : "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_579266854_20190904113343.jpg" },
-    {name : "Lacchiwalla" , about : "popular picnic destination",  time:"" , charges:"INR 20 " , 
-      imgS:"https://images.app.goo.gl/ognPq9NTkxTakRsM6"  }
+    
  ] , 
  [
    {name : "Lake Pichola" , about : "artificial lake", time : "1-2 hrs" , charges : "free", imgS:"https://www.holidify.com/images/cmsuploads/compressed/shutterstock_536597029_20190606160921_20190606161228.jpg"},
    {name : "Eklingji Temple" , about : "most popular temple of Rajasthan", time : "2 hrs" , charges : "free", imgS:"https://www.holidify.com/images/cmsuploads/compressed/30883407598_f5348a51cb_b_20190514183627.jpg"},
-   {name : "City Palace" , about : "magnificent royal complex", time : "3 hrs" , charges : "300inr", imgS:"https://www.holidify.com/images/cmsuploads/compressed/3137_20190428132918.jpg"}
+   {name : "City Palace" , about : "magnificent royal complex", time : "3 hrs" , charges : "300inr", imgS:"https://www.holidify.com/images/cmsuploads/compressed/3137_20190428132918.jpg"},
+    {name:"Fateh Sagar Lake" , about:"artificial lake" , time :"1-2 hrs" , charges:"free" ,imgS:"https://www.holidify.com/images/cmsuploads/compressed/22809330353_510177c130_b_20170521144350.jpg"},
+    {name:"Jaisamamd Lake" ,  about:"second largest artificaial lake in Asia" , time:"2-3 hrs" , charges:"free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/1280px-Jaisamandlake_20180111154814.jpg"},
+    { name:"Jagdish Temple" , about:"Lord Vishnu Temple" , time:"1-2 hrs" , charges:"free" ,imgS:"https://www.holidify.com/images/cmsuploads/compressed/JagdishTemple_20200310115617_20200310115645.jpg"}
+ 
+  ],
+ [   {name:"Gateway of India" , about:"distinguished tourist hub" , time:"1-2 hrs" , charges:"free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/1030_20190404091854.jpg" },
+      {name:"Juhu Beach" , about:"popular beach" , time:"1-2 hrs" , charges:"free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/attr_1381_20191212141450.jpg" },
+      {name:"Chhatrapati Shivaji Terminus" , about:"hertage site" , time:"1 hour" , charges:"free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1035495202_20200312115621_20200312115702.jpg" },
+      {name:"Essel World" , about:"adventure park" , time:"6-7 hours" , charges:"390 INR" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/1038_20190404132650.jpg" },
+      {name:"Mumbai Zoo" , about:"perfect picnic spot" , time:"2-3 hrs" , charges:"100 INR" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/800px-Elephant_-_Bhau_Daji_Museum_02_20170503202750.JPG" },
+      {name:"Naneghat" , about:"historic mountain pass" , time:"1 day" , charges:"free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/61793840_20171014165117.jpg" }
+],
+ [
+  { name: "The Ridge" , about : "most popular point" , time : "2-3 hours" , charges :"Free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/1913_20190523190338.jpg" },
+  { name: "Shimla Christ Church" , about : "beautiful church" , time : "1-2 hours" , charges :"Free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/Simla_ridge01_20170913144816.jpg" },
+  { name: "Green valley" , about : "mesmerising place" , time : "1day" , charges :"Free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/Green_Valley_Shimla_20170807131601.jpg" },
+  { name: "Jakhu Temple" , about : "world's largest Hanuman statue" , time : "1-2 hours" , charges :"Free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1406973674_20190829171223_20190829171515.png" },
+  { name: "Himachal State Museum" , about : "unique collectable items" , time : "Less than 1 hour" , charges :"INR 20 " , imgS:"https://www.holidify.com/images/cmsuploads/compressed/5801_20190530190113.jpg" },
+  { name: "Shimla Reserve Forest Sanctuary" , about : "popular flora fauna" , time : "4 to 5 hours " , charges :"INR 25" , imgS:"https://www.holidify.com/images/compressed/4955.jpg" }
  ],
  [
-  { name: "The Ridge" , about : "most popular point" , time : "2-3 hours" , charges :"Free" , imgS:"" },
-  { name: "Shimla Christ Church" , about : "beautiful church" , time : "1-2 hours" , charges :"Free" , imgS:"" },
-  { name: "Green valley" , about : "mesmerising place" , time : "1day" , charges :"Free" , imgS:"" },
-  { name: "Jakhu Temple" , about : "world's largest Hanuman statue" , time : "1-2 hours" , charges :"Free" , imgS:"" },
-  { name: "Himachal State Museum" , about : "unique collectable items" , time : "Less than 1 hour" , charges :"INR 20 " , imgS:"" },
-  { name: "Shimla Reserve Forest Sanctuary" , about : "popular flora fauna" , time : "4 to 5 hours " , charges :"INR 25" , imgS:"" }
- ],
- [
-   { name: "Tapkeshwar Temple" , about : "" , time : "1-2 hrs" , charges :"Free" , imgS:"" },
-   { name: "forest Research Institute" , about : "" , time : "1-2 hrs" , charges :"INR 15" , imgS:"" },
-   { name: "Kedarnath Trek" , about : "" , time : "5 days" , charges :"INR 7000-9000" , imgS:"" },
-   { name: "Tiger View Jungle" , about : "" , time : "1-2 hrs" , charges :"varying" , imgS:"" },
-   { name: "Robber's Cave" , about : "" , time : "2-3 hrs" , charges :"INR 25" , imgS:"" }
-   
+   { name: "Tapkeshwar Temple" , about : "" , time : "1-2 hrs" , charges :"Free" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/attr_2094_20191226114043.jpg" },
+   { name: "forest Research Institute" , about : "" , time : "1-2 hrs" , charges :"INR 15" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/F.R.I_20201213142309.jpg" },
+   { name: "Kedarnath Trek" , about : "" , time : "5 days" , charges :"INR 7000-9000" , imgS:"https://www.holidify.com/images/bgImages/KEDARNATH.jpg" },
+   { name: "Tiger View Jungle" , about : "" , time : "1-2 hrs" , charges :"varying" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/800px-Flehmen_Response_in_a_Sub_Adult_Tiger_20191212161608.jpg" },
+   { name: "Robber's Cave" , about : "" , time : "2-3 hrs" , charges :"INR 25" , imgS:"https://www.holidify.com/images/cmsuploads/compressed/Screenshot2020-12-13at2.20.16PM_20201213142025.png" },
+   {name : "Lacchiwalla" , about : "popular picnic destination",  time:"" , charges:"INR 20 " , 
+      imgS:"https://www.holidify.com/images/cmsuploads/compressed/4313_20200629170457.jpg"  }
  ]
  
 

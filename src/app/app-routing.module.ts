@@ -14,7 +14,7 @@ import { DehradunComponent } from './dehradun/dehradun.component';
  //import { AuthGuard } from './auth/auth-guard';
 
 const routes: Routes = [
-  { path: '' , redirectTo : 'home' , pathMatch : 'full'  },
+  { path: '' , redirectTo : 'auth' , pathMatch : 'full'  },
   { path: 'home/cart' , component : MycartComponent  },
   { path: 'home' , component : MainBodyComponent  },
   { path : 'home/:id' , component : CityBodyComponent },
@@ -29,7 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+ imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { 
